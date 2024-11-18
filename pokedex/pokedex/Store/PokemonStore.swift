@@ -11,9 +11,9 @@ import Observation
 @Observable
 class PokemonStore {
     private(set) var pokemons: [Pokemon] = []
+    private(set) var pokemonDetail: PokemonDetail? = nil
 
     func getPokemonList() async throws {
-
         pokemons = [
             Pokemon(
                 id: "1",
@@ -30,5 +30,9 @@ class PokemonStore {
                 )!
             )
         ]
+    }
+
+    func getPokemonDetail(url: URL?) async throws {
+        pokemonDetail = PokemonDetail(id: "1", name: "bulbasaur", image: URL(string: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/1.png"), type: [PokemonType(id: "1", type: "Grass", url: nil)], description: "bulbasaur bulbasaur bulbasaur")
     }
 }
