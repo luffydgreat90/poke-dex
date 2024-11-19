@@ -14,9 +14,43 @@ struct PokemonDetailScreen: View {
         ScrollView {
             VStack {
                 HStack {
-                    ImageAsyncView(url: pokemonStore.pokemonDetail?.image, width: 200, height: 200)
                     Text(pokemonStore.pokemonDetail?.name ?? "")
+                        .font(.largeTitle)
+                    Text(pokemonStore.pokemonDetail?.id ?? "")
+                        .font(.largeTitle)
+                        .foregroundStyle(.gray)
                 }
+
+                HStack {
+                    ImageAsyncView(
+                        url: pokemonStore.pokemonDetail?.image,
+                        width: 200,
+                        height: 200
+                    )
+
+                    VStack {
+                        Text("this is a balbasur")
+
+                        HStack {
+                            Text("Height: 0.7")
+                            Text("Weight: 0.7")
+                        }
+
+                        Text("Type:")
+                        HStack {
+                            Text("Height: 0.7")
+                            Text("Weight: 0.7")
+                        }
+                    }
+                }
+
+                VStack {
+                    Text("Abilities:")
+                    HStack {
+
+                    }
+                }
+
             }
         }.task {
             do {
