@@ -16,8 +16,13 @@ struct ImageAsyncView: View {
         AsyncImage(url: url){  result in
             result.image?
                 .resizable()
-                .scaledToFill()
-        }.frame(width: width, height: height)
+                .aspectRatio(contentMode: .fit)
+                .frame(width: width, height: height, alignment: .center)
+        }
+        .padding(8.0)
+        .background(.gray.opacity(0.5))
+        .cornerRadius(3.0)
+        .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 5)
     }
 }
 

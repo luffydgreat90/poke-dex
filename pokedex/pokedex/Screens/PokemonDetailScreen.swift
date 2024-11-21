@@ -16,41 +16,46 @@ struct PokemonDetailScreen: View {
                 HStack {
                     Text(pokemonStore.pokemonDetail?.name ?? "")
                         .font(.largeTitle)
+                        .fontWeight(.bold)
                     Text(pokemonStore.pokemonDetail?.id ?? "")
                         .font(.largeTitle)
                         .foregroundStyle(.gray)
+                        .fontWeight(.bold)
                 }
 
-                HStack {
+                HStack(alignment: .top) {
                     ImageAsyncView(
                         url: pokemonStore.pokemonDetail?.image,
-                        width: 200,
-                        height: 200
+                        width: 180,
+                        height: 180
                     )
 
                     VStack {
                         Text("this is a balbasur")
+                            .padding(8.0)
+                            .frame(maxWidth: .infinity)
+                            .background(.gray.opacity(0.5))
+                            .frame(maxWidth: .infinity)
+                            .cornerRadius(3.0)
 
                         HStack {
-                            Text("Height: 0.7")
-                            Text("Weight: 0.7")
+                            DetailView(
+                                header: "Height",
+                                value: "0.7m"
+                            )
+
+                            DetailView(
+                                header: "Weight",
+                                value: "6.9kg"
+                            )
                         }
-
-                        Text("Type:")
-                        HStack {
-                            Text("Height: 0.7")
-                            Text("Weight: 0.7")
-                        }
-                    }
-                }
-
-                VStack {
-                    Text("Abilities:")
-                    HStack {
+                        .frame(maxWidth: .infinity)
+                        .padding(8.0)
+                        .background(.blue.opacity(0.5))
+                        .cornerRadius(3.0)
 
                     }
-                }
-
+                }.padding(8.0)
             }
         }.task {
             do {

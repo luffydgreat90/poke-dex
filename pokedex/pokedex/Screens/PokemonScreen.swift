@@ -19,7 +19,6 @@ struct PokemonScreen: View {
             } catch {
 
             }
-
         }
     }
 }

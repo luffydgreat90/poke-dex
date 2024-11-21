@@ -19,6 +19,7 @@
 		F82198812CEAA09700CEF116 /* HTTPURLResponse+StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82198802CEAA09700CEF116 /* HTTPURLResponse+StatusCode.swift */; };
 		F82198862CEAA3EB00CEF116 /* PokemonScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82198852CEAA3EB00CEF116 /* PokemonScreen.swift */; };
 		F82198892CEAA59D00CEF116 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82198882CEAA59D00CEF116 /* HTTPClient.swift */; };
+		F8DB293B2CEFFA0D006822FD /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DB293A2CEFFA0D006822FD /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		F82198802CEAA09700CEF116 /* HTTPURLResponse+StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+StatusCode.swift"; sourceTree = "<group>"; };
 		F82198852CEAA3EB00CEF116 /* PokemonScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonScreen.swift; sourceTree = "<group>"; };
 		F82198882CEAA59D00CEF116 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		F8DB293A2CEFFA0D006822FD /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				F80BEA8B2CEC012800293205 /* ImageAsyncView.swift */,
+				F8DB293A2CEFFA0D006822FD /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				F821987B2CEA9DE700CEF116 /* Pokemon.swift in Sources */,
 				F82198782CEA9C1400CEF116 /* PokemonStore.swift in Sources */,
 				F82198662CEA9A4F00CEF116 /* PokedexApp.swift in Sources */,
+				F8DB293B2CEFFA0D006822FD /* DetailView.swift in Sources */,
 				F82198892CEAA59D00CEF116 /* HTTPClient.swift in Sources */,
 				F82198812CEAA09700CEF116 /* HTTPURLResponse+StatusCode.swift in Sources */,
 				F80BEA8A2CEBF1AA00293205 /* PokemonDetail.swift in Sources */,
