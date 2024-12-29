@@ -12,8 +12,15 @@ import Observation
 class PokemonStore {
     private(set) var pokemons: [Pokemon] = []
     private(set) var pokemonDetail: PokemonDetail? = nil
+    private let getData: GetResult
+
+    init(getData: @escaping GetResult) {
+        self.getData = getData
+    }
 
     func getPokemonList() async throws {
+
+
         pokemons = [
             Pokemon(
                 id: "1",

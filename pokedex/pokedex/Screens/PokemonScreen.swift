@@ -25,5 +25,7 @@ struct PokemonScreen: View {
 
 #Preview {
     PokemonScreen()
-        .environment(PokemonStore())
+        .environment(PokemonStore(getData: { _, _ in
+            return nil
+        }))
 }
